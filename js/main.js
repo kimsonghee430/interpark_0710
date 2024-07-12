@@ -5,4 +5,28 @@ window.onload = function(){
     mypageBT.onclick = function(){
         mypagelist.classList.toggle("active")
     }
+    //스와이퍼===============
+    
+    const swPromotion = new Swiper(".sw-promotion" , {
+        slidesPerView: 1,
+        spaceBetween: 24,
+        breakpoints: {
+            480 : {
+                slidesPerView: 2
+            },
+            760 : {
+                slidesPerView: 3.5
+            },
+        },
+        navigation:{
+            nextEl: ".promotion .sw-next",
+            prevEl: ".promotion .sw-prev",
+        },
+        loop : true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+          },
+
+    })
 };
