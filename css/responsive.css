@@ -58,6 +58,22 @@
         left: 50%;
         transform: translateX(-50%);
     }
+    .sw-promotion-control{
+        display: block;
+        height: 23px;
+    }
+    .sw-promotion-pg{
+        height: 100%;
+        margin-top: 10px;
+    }
+    .swiper-pagination-bullet{
+        border-radius: 0;
+        background-color: cornflowerblue;
+    }
+    .swiper-pagination-bullet-active{
+        background-color: rgb(0, 11, 107);
+        width: 10px;
+    }
 }
 
 @media screen and (max-width: 480px) {

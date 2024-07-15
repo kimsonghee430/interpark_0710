@@ -19,3 +19,11 @@
     width: 100%;
     height: auto;
 }
+
+/* pagination */
+
+.sw-promotion-control{
+    position: relative;
+    text-align: center;
+    display: none;
+}
