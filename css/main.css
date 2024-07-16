@@ -8,6 +8,7 @@
 @import url("header.css");
 @import url("promotion.css");
 @import url("shopping.css");
+@import url("tour.css");
 
 
 *{
@@ -79,6 +80,11 @@ body{
     background-color: #111 !important;
     color: #fff !important;
   }
+
+  .section-slide{
+    margin-bottom: 20px;
+}
+
 /* 섹션 하단의 링크버튼 */
 .section-bottom{
     text-align: center;
@@ -146,6 +152,8 @@ body{
     transform: translate(50%, -50%);
     z-index: 99;
 }
+
+
 /* 플라잉 배너 */
 /* 퀵메뉴 */
 

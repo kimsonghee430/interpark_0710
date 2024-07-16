@@ -35,9 +35,14 @@ window.onload = function(){
     })
     // 쇼핑의 스와이퍼 기능 적용
     const swShopping = new Swiper(".sw-shopping",{
-        slidesPerView: 3,
+        navigation:{
+            nextEl: ".shopping .sw-next",
+            prevEl: ".shopping .sw-prev",
+        },
+        loop: true,
+        slidesPerView: 1.1,
         grid:{
-            rows : 3,
+            rows : 1,
             fill:"row"
         },
         spaceBetween: 10,
@@ -54,6 +59,93 @@ window.onload = function(){
                 spaceBetween: 32,
                 slidesPerView: 3,
                 slidesPerGroup: 3,
+                grid:{
+                    rows : 1,
+                },
+            },
+            1280:{
+                spaceBetween: 26,
+                slidesPerView: 4,
+                slidesPerGroup: 4,
+                grid:{
+                    rows : 1,
+                },
+            },
+        }
+    })
+// 투어의 스와이퍼 기능
+    const swTour = new Swiper(".sw-tour",{
+        navigation:{
+            nextEl: ".tour .sw-next",
+            prevEl: ".tour .sw-prev",
+        },
+        loop: true,
+
+        // 모바일버전
+        slidesPerView: 1.2,
+        spaceBetween : 10,
+        grid:{
+            rows : 1,
+            fill : "row",
+        },
+
+        breakpoints:{
+            480:{
+                spaceBetween: 32,
+                slidesPerView: 2,
+                slidesPerGroup: 2,
+                grid:{
+                    rows : 2,
+                },
+            },
+            1024:{
+                spaceBetween: 32,
+                slidesPerView: 3,
+                slidesPerGroup: 2,
+                grid:{
+                    rows : 1,
+                },
+            },
+            1280:{
+                spaceBetween: 26,
+                slidesPerView: 3,
+                slidesPerGroup: 3,
+                grid:{
+                    rows : 1,
+                },
+            },
+        }
+    })
+
+// 티켓 스와이퍼 기능
+    const swTicket = new Swiper(".sw-ticket",{
+        navigation:{
+            nextEl: ".ticket .sw-next",
+            prevEl: ".ticket .sw-prev",
+        },
+        loop: true,
+
+        // 모바일버전
+        slidesPerView: 1.2,
+        spaceBetween : 10,
+        grid:{
+            rows : 1,
+            fill : "row",
+        },
+
+        breakpoints:{
+            480:{
+                spaceBetween: 32,
+                slidesPerView: 2,
+                slidesPerGroup: 2,
+                grid:{
+                    rows : 2,
+                },
+            },
+            1024:{
+                spaceBetween: 32,
+                slidesPerView: 3,
+                slidesPerGroup: 2,
                 grid:{
                     rows : 1,
                 },
