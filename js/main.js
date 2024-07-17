@@ -124,6 +124,7 @@ window.onload = function(){
             prevEl: ".ticket .sw-prev",
         },
         loop: true,
+        
 
         // 모바일버전
         slidesPerView: 1.2,
@@ -137,26 +138,20 @@ window.onload = function(){
             480:{
                 spaceBetween: 32,
                 slidesPerView: 2,
-                slidesPerGroup: 2,
-                grid:{
-                    rows : 2,
-                },
+
+
             },
             1024:{
                 spaceBetween: 32,
                 slidesPerView: 3,
-                slidesPerGroup: 2,
-                grid:{
-                    rows : 1,
-                },
+
+
             },
             1280:{
                 spaceBetween: 26,
                 slidesPerView: 4,
-                slidesPerGroup: 4,
-                grid:{
-                    rows : 1,
-                },
+
+
             },
         }
     })
