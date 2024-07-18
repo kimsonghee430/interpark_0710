@@ -117,6 +117,7 @@ window.onload = function(){
         }
     })
 
+
 // 티켓 스와이퍼 기능
     const swTicket = new Swiper(".sw-ticket",{
         navigation:{
@@ -155,4 +156,43 @@ window.onload = function(){
             },
         }
     })
+
+// live스와이퍼
+const swLive = new Swiper(".sw-live" , {
+    slidesPerView: 1.3,
+    spaceBetween: 27,
+
+    navigation:{
+        nextEl: ".live .sw-next",
+        prevEl: ".live .sw-prev",
+    },
+    loop: true,
+    
+    breakpoints:{
+        480:{
+            spaceBetween: 32,
+            slidesPerView: 1.5,
+
+
+        },
+        1024:{
+            spaceBetween: 32,
+            slidesPerView: 3,
+
+
+        },
+        1280:{
+            spaceBetween: 26,
+            slidesPerView: 4,
+
+
+        },
+    }
+  })
+
+
 };
+
+
+
+
