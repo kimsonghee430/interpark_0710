@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+.sw-book{
+    background-color: aqua;
+}
+/* .book-link{
+border: 1px solid #333;
+} */
+.book-img{
+    width: 95%;
+    height: auto;
+}
+
+.book-img img{
+    width: 100%;
+}

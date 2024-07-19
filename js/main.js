@@ -157,42 +157,62 @@ window.onload = function(){
         }
     })
 
-// live스와이퍼
-const swLive = new Swiper(".sw-live" , {
-    slidesPerView: 1.3,
-    spaceBetween: 27,
-
+  // live스와퍼
+  const swLive = new Swiper(".sw-live", {
+    slidesPerView: 1.2,
+    spaceBetween: 10,
     navigation:{
         nextEl: ".live .sw-next",
         prevEl: ".live .sw-prev",
     },
     loop: true,
-    
-    breakpoints:{
-        480:{
-            spaceBetween: 32,
-            slidesPerView: 1.5,
+    breakpoints: {
+      330: {
+        slidesPerView: 1.2,
+        spaceBetween: 10,
+      },
+      480: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
 
+      675: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+      1280: {
+        slidesPerView: 4,
+        spaceBetween: 27,
+      },
+    },
+  });
 
-        },
-        1024:{
-            spaceBetween: 32,
+  // book swiper
+  const swBooks = new Swiper(".sw-book", {
+    slidesPerView: 5,
+    spaceBetween: 10,
+    navigation:{
+        nextEl: ".books .sw-next",
+        prevEl: ".books .sw-prev",
+    },
+    loop: true,
+    breakpoints: {
+
+        768: {
             slidesPerView: 3,
+            spaceBetween: 20,
+          },
+          1280: {
+            slidesPerView: 5,
+            spaceBetween: 27,
+          },
+    },
+});
 
-
-        },
-        1280:{
-            spaceBetween: 26,
-            slidesPerView: 4,
-
-
-        },
-    }
-  })
-
-
-};
-
-
+}
 
 
