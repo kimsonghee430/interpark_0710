@@ -124,5 +124,8 @@
   .live-img img{
     width: 100%;
   }
+  .book-img{
+    height: 200px;
+  }
 }
 

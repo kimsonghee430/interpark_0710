@@ -191,27 +191,93 @@ window.onload = function(){
     },
   });
 
-  // book swiper
-  const swBooks = new Swiper(".sw-book", {
-    slidesPerView: 5,
-    spaceBetween: 10,
-    navigation:{
-        nextEl: ".books .sw-next",
-        prevEl: ".books .sw-prev",
-    },
-    loop: true,
-    breakpoints: {
-
-        768: {
+    // books스와퍼
+    const books = new Swiper(".sw-books" , {
+        navigation: {
+          nextEl: ".books .sw-next",
+          prevEl: ".books .sw-prev",
+        },
+    
+        loop: true,
+        slidesPerView:2,
+        spaceBetween: 19,
+        grid: {
+          rows: 5,
+          fill: "row",
+        },
+        breakpoints:{
+          480: {
+            slidesPerView: 3,
+            spaceBetween: 20, grid: {
+              rows: 1,
+            },
+          },
+          768: {
             slidesPerView: 3,
             spaceBetween: 20,
           },
+          1024: {
+            slidesPerView: 4,
+            slidesPerGroup: 3,
+            spaceBetween: 30,
+            grid: {
+              rows: 1,
+            },
+          },
           1280: {
             slidesPerView: 5,
+            slidesPerGroup: 5,
             spaceBetween: 27,
+            grid: {
+              rows: 1,
+            },
           },
-    },
-});
+        }
+      })
+    // 이벤트 스와이퍼
+    const event = new Swiper(".sw-event" , {
+        navigation: {
+          nextEl: ".event .sw-next",
+          prevEl: ".event .sw-prev",
+        },
+    
+        loop: true,
+        slidesPerView:2,
+        spaceBetween: 19,
+        grid: {
+          rows: 5,
+          fill: "row",
+        },
+        breakpoints:{
+          480: {
+            slidesPerView: 3,
+            spaceBetween: 20, grid: {
+              rows: 1,
+            },
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+          1024: {
+            slidesPerView: 4,
+            slidesPerGroup: 3,
+            spaceBetween: 30,
+            grid: {
+              rows: 1,
+            },
+          },
+          1280: {
+            slidesPerView: 4,
+            slidesPerGroup: 4,
+            spaceBetween: 27,
+            grid: {
+              rows: 1,
+            },
+          },
+        }
+      })
+    
 
 }
 
