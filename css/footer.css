@@ -1,0 +1,32 @@
+@charset "utf-8";
+.footer{
+    border-top : 1px solid #b1b1b1;
+    border-bottom : 1px solid #b1b1b1;
+}
+.footer-navi{
+    position: relative;
+    margin: auto;
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    width: 100%;
+    padding: 15px 0;
+
+}
+.footer-list{
+    /* width: calc(100% / 10); */
+    position: relative;
+    padding: 3px;
+}
+.footer-list::after{
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -25px;
+    width: 1px;
+    height: 12px;
+    background-color: #333;
+}
+.footer-list:first-child::after{
+    content: none;
+}
