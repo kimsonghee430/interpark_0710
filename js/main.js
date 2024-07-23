@@ -5,6 +5,20 @@ window.onload = function(){
     mypageBT.onclick = function(){
         mypagelist.classList.toggle("active")
     }
+    // 탑메뉴==========
+    const topBtn = document.querySelector("#gotop")
+    topBtn.addEventListener("click" , function(e){
+      e.preventDefault()
+      if(window.scrollY !== 0){
+        //현재 스크롤 위치가 0이 아니면 페이지 top으로 스크롤
+        window.scrollTo({
+          // top: document.documentElement.scrollHeight,
+          top: 0,
+          behavior: "smooth",
+        })
+      }
+    })
+
     //스와이퍼===============
     
     const swPromotion = new Swiper(".sw-promotion" , {
@@ -250,17 +264,17 @@ window.onload = function(){
         },
         breakpoints:{
           480: {
-            slidesPerView: 3,
-            spaceBetween: 20, grid: {
+            slidesPerView: 2,
+            spaceBetween: 10, grid: {
               rows: 1,
             },
           },
           768: {
-            slidesPerView: 3,
+            slidesPerView: 2,
             spaceBetween: 20,
           },
           1024: {
-            slidesPerView: 4,
+            slidesPerView: 3,
             slidesPerGroup: 3,
             spaceBetween: 30,
             grid: {

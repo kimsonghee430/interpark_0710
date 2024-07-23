@@ -81,6 +81,22 @@
   html {
     font-size: 8px;
   }
+  .event .section-slide{
+    height: 400px;
+}
+.quick-menu{
+  display: block;
+}
+.event .inner{
+  border-bottom: none;
+}
+.footer-menu, .footer-main{
+  display: none;
+}
+.footer-mobile{
+  display: block;
+}
+
 }
 @media screen and (max-width: 680px) {
   .live .section-slide {
@@ -129,3 +145,11 @@
   }
 }
 
+@media screen and (max-width: 320px) {
+  .books-img {
+    height: 130px;
+  }
+  .sw-events .swiper-slide{
+    height: 190px;
+}
+}
