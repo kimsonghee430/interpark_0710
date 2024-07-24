@@ -58,7 +58,7 @@
     width: 110px;
   }
 
-  .footer-menu-list > li:hover .more-list{
+  .footer-menu-list > li.active .more-list{
     display: block;
  }
 
